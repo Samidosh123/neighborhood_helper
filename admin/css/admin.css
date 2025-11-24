@@ -1,0 +1,177 @@
+/* ============================
+   GENERAL LAYOUT
+   ============================ */
+body.dashboard-body {
+    margin: 0;
+    font-family: "Segoe UI", Roboto, Arial, sans-serif;
+    display: flex;
+    background: #f4f6f9;
+    color: #334155;
+}
+
+/* ============================
+   SIDEBAR
+   ============================ */
+.sidebar {
+    width: 240px;
+    background: #0f172a; /* dark navy */
+    color: #fff;
+    min-height: 100vh;
+    padding: 20px;
+    position: fixed;
+    top: 0;
+    left: 0;
+}
+
+.sidebar h2 {
+    margin: 0 0 20px;
+    font-size: 18px;
+    color: #e2e8f0;
+}
+
+.sidebar ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.sidebar ul li {
+    margin: 10px 0;
+}
+
+.sidebar ul li a {
+    display: block;
+    color: #cbd5e1;
+    text-decoration: none;
+    padding: 10px 14px;
+    border-radius: 8px;
+    transition: background 0.2s;
+    font-weight: 500;
+}
+
+.sidebar ul li a:hover {
+    background: #1e293b;
+    color: #fff;
+}
+
+.sidebar ul li a.active {
+    background: #2563eb;
+    color: #fff;
+}
+
+/* ============================
+   MAIN CONTENT
+   ============================ */
+.main-content {
+    margin-left: 260px; /* space for sidebar */
+    flex: 1;
+    padding: 30px;
+}
+
+.main-content h1 {
+    font-size: 24px;
+    margin-bottom: 20px;
+    color: #0f172a;
+}
+
+/* ============================
+   SETTINGS MENU (TABS)
+   ============================ */
+.settings-menu {
+    list-style: none;
+    padding: 0;
+    margin: 0 0 20px;
+    display: flex;
+    gap: 12px;
+    border-bottom: 2px solid #e2e8f0;
+}
+
+.settings-menu li {
+    display: inline-block;
+}
+
+.settings-menu a {
+    text-decoration: none;
+    color: #334155;
+    background: #f1f5f9;
+    padding: 10px 16px;
+    border: 1px solid #e2e8f0;
+    border-bottom: none;
+    border-radius: 8px 8px 0 0;
+    font-weight: 600;
+    transition: background 0.2s;
+}
+
+.settings-menu a:hover {
+    background: #e2e8f0;
+}
+
+.settings-menu a.active {
+    background: #fff;
+    color: #0f172a;
+    position: relative;
+    top: 2px;
+}
+
+/* ============================
+   SETTINGS CONTENT BOX
+   ============================ */
+.settings-content {
+    background: #fff;
+    border: 1px solid #e2e8f0;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+    padding: 24px;
+    min-height: 260px;
+}
+
+/* ============================
+   TABLES (CATEGORIES, ROLES, ETC.)
+   ============================ */
+.settings-content table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 15px;
+    background: #fff;
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.settings-content th, .settings-content td {
+    padding: 12px 14px;
+    border-bottom: 1px solid #e5e7eb;
+    text-align: left;
+}
+
+.settings-content th {
+    background: #f9fafb;
+    font-weight: 700;
+    color: #1e293b;
+}
+
+/* ============================
+   FORMS & BUTTONS
+   ============================ */
+.settings-content input[type="text"],
+.settings-content select {
+    padding: 10px 12px;
+    border: 1px solid #cbd5e1;
+    border-radius: 6px;
+    width: 250px;
+    margin-right: 10px;
+}
+
+.settings-content button {
+    padding: 10px 14px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    background: #2563eb;
+    color: #fff;
+    font-weight: 600;
+    transition: background 0.2s;
+}
+
+.settings-content button:hover {
+    background: #1d4ed8;
+}
